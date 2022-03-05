@@ -1,0 +1,14 @@
+{
+  "Headers": ["Name", "Surname", "Email"],
+  "Validation_rules": {
+                      "check_text_length": {
+                                          "columns": ["Name" , "Surname"],
+                                          "number": [1, 100]
+                                          },
+                      "check_number": [],
+                      "check_email": ["Email"],
+                      "check_uniqueness": ["Email", "Name", "Surname"],
+                      "check_blank": ["Name" , "Surname"]
+                      }
+
+}
